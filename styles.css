@@ -690,6 +690,7 @@ a {
 .rules-panel__body {
     min-height: 14rem;
     padding: clamp(1.25rem, 3vw, 1.75rem);
+    white-space: pre-wrap;
 }
 
 .connect-block {
