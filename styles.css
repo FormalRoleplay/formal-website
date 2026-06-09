@@ -690,7 +690,65 @@ a {
 .rules-panel__body {
     min-height: 14rem;
     padding: clamp(1.25rem, 3vw, 1.75rem);
-    white-space: pre-wrap;
+    white-space: normal;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.rules-panel__body h2,
+.rules-panel__body h3 {
+    font-family: var(--font-sans);
+    color: var(--text);
+}
+
+.rules-panel__body h2 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.rules-panel__body h3 {
+    font-size: 0.98rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+}
+
+.rules-panel__body p {
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.rules-panel__body ul {
+    margin: 0.5rem 0 1rem 1.2rem;
+    color: var(--text-muted);
+    list-style: disc inside;
+}
+
+.rules-panel__body ul li {
+    margin-bottom: 0.55rem;
+}
+
+.rules-panel__body .rules-section {
+    padding: 0;
+}
+
+.rules-panel__body .rules-section + .rules-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.2rem;
+}
+
+.rules-panel__body .rules-note {
+    border-top: 1px solid rgba(255, 215, 0, 0.12);
+    padding-top: 1rem;
+}
+
+.rules-panel__body .rules-note h2 {
+    color: var(--gold-bright);
+}
+
+.rules-panel__body .rules-note p strong {
+    color: var(--text);
 }
 
 .connect-block {
